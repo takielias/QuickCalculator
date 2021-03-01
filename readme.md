@@ -28,10 +28,6 @@ $result = $calculator->summation()->get();
 
 If you discover any security related issues, please email taki.elias@gmail.com instead of using the issue tracker.
 
-## Credits
-
-- [Taki Elias][link-author]
-
 ## License
 
 MIT.
