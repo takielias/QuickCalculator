@@ -1,0 +1,40 @@
+{
+    "name": "takielias/quickcalculator",
+    "description": "A Simple Calculator",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Taki Elias",
+            "email": "taki.elias@gmail.com",
+            "homepage": "https://ebuz.xyz"
+        }
+    ],
+    "homepage": "https://github.com/takielias/quickcalculator",
+    "keywords": [
+        "Laravel",
+        "QuickCalculator"
+    ],
+    "require": {
+        "illuminate/support": "~6|~7|~8"
+    },
+    "autoload": {
+        "psr-4": {
+            "TakiElias\\QuickCalculator\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "TakiElias\\QuickCalculator\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "TakiElias\\QuickCalculator\\QuickCalculatorServiceProvider"
+            ],
+            "aliases": {
+                "QuickCalculator": "TakiElias\\QuickCalculator\\Facades\\QuickCalculator"
+            }
+        }
+    }
+}
