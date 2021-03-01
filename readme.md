@@ -15,19 +15,14 @@ composer require takielias/quickcalculator
 
 ## Usage
 
-## Change log
-
-Please see the [changelog](changelog.md) for more information on what has changed recently.
-
-## Testing
-
 ``` bash
-composer test
+use TakiElias\QuickCalculator\Facades\QuickCalculator;
 ```
 
-## Contributing
-
-Please see [contributing.md](contributing.md) for details and a todolist.
+``` bash
+$calculator = QuickCalculator::plus(10, 2)->minus(2, 1);
+$result = $calculator->summation()->get();
+```
 
 ## Security
 
@@ -36,11 +31,10 @@ If you discover any security related issues, please email taki.elias@gmail.com i
 ## Credits
 
 - [Taki Elias][link-author]
-- [All Contributors][link-contributors]
 
 ## License
 
-MIT. Please see the [license file](license.md) for more information.
+MIT.
 
 [ico-version]: https://img.shields.io/packagist/v/takielias/quickcalculator.svg?style=flat-square
 [ico-downloads]: https://img.shields.io/packagist/dt/takielias/quickcalculator.svg?style=flat-square
@@ -52,4 +46,3 @@ MIT. Please see the [license file](license.md) for more information.
 [link-travis]: https://travis-ci.org/takielias/quickcalculator
 [link-styleci]: https://styleci.io/repos/12345678
 [link-author]: https://github.com/takielias
-[link-contributors]: ../../contributors
